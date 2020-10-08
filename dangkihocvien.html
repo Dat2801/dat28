@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    td {
+        width: 70px;
+        height: 20px;
+    }
+    th {
+        background-color: palegreen;
+    }
+    tr {
+        background-color: antiquewhite;
+    }
+    table {
+        border-left: hidden;
+        border-right: hidden;
+        border-top: hidden;
+        border-collapse: collapse;
+        border: solid 1px antiquewhite;
+    }
+    h1 {
+        text-align: left;
+    }
+</style>
+<body>
+<table border="1" width="50%">
+    <tr>
+        <th colspan="2">
+            <h1 style="color: blue" >Đăng kí học viên</h1>
+        </th>
+    </tr>
+    <tr>
+        <td>Họ tên</td>
+        <td><input type="text" name="Họ tên" size="50px"></td>
+    </tr>
+    <tr>
+        <td>Ngày sinh</td>
+        <td><input type="date" name="ngày sinh" size="30px"></td>
+    </tr>
+    <tr>
+        <td>Giới tính</td>
+        <td>
+            <input type="radio" name="giới tính" size="15px">Nam
+            <input type="radio" name="giới tính" size="15px">Nữ
+        </td>
+    </tr>
+    <tr>
+        <td>Địa chỉ</td>
+        <td>
+            <textarea name="địa chỉ" style="size: 100px"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>Lớp</td>
+        <td>
+            <select>
+                <option style="size: 300px">--Chọn lớp--</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>
+            <input type="email" name="email" size="20px">
+        </td>
+    </tr>
+    <tr>
+        <td>Điện thoại</td>
+        <td>
+            <input type="number" name="Điện thoại" size="30px">
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="button" name="Đăng kí" value="Đăng kí" size="15px">
+            <input type="reset" name="Nhập lại" value="Nhập lại" size="15px">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
