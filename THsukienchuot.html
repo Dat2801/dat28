@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="myImage" src="https://media3.scdn.vn/img2/2017/7_30/Sa4SfN_simg_b5529c_250x250_maxb.jpg" />
+    <p>Click button below to move the image to right</p>
+</form>
+<script>
+    let imaObj = null;
+    imaObj = document.getElementById('myImage');
+    function init() {
+        imaObj = document.getElementById('myImage');
+        imaObj.style.position = 'relative';
+        imaObj.style.left = '0px'
+    }
+    function moveRinght() {
+        imaObj.style.left = parseInt(imaObj.style.left) + 10 +'px'
+    }
+    window.onload = init;
+</script>
+<input type="button" value="Click me" onclick="moveRinght();"/>
+</body>
+</html>
