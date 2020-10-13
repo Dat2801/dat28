@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<form action="">
+    amount:<br>
+    <input type="text" id="amount">
+    <select id="to">
+        <option value="usd">usd</option>
+        <option value="vnd">vnd</option>
+    </select>
+    <select id="from">
+        <option value="usd">usd</option>
+        <option value="vnd">vnd</option>
+    </select>
+    <input type="button" value="convet" onclick=convert()>
+    <p id="result"></p>
+</form>
+    <script>
+        var convert = function(){
+            var vndtousd = 23200;
+            var result = '';
+            var el_to = document.getElementById('to').value;
+            var el_from = document.getElementById('from').value;
+            if(el_to === 'usd'){
+                if(el_from === 'vnd'){
+                    result = (document.getElementById('amount').value)*vndtousd;
+                }else result = (document.getElementById('amount').value);
+            }else if(el_to === 'vnd'){
+                if(el_from === 'usd'){
+                    result = (document.getElementById('amount').value)/vndtousd;
+                }else result = (document.getElementById('amount').value);
+            }
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
