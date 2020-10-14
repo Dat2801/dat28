@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố</title>
+</head>
+<body>
+<script>
+    function check() {
+        let n = +prompt("Nhập vào một số");
+        let i = 2;
+        if(n<2) {
+            document.write('Không phải là số NT');
+            return ;
+        }while (i<n) {
+            if (n%i === 0) {
+                document.write('Không phải là số NT');
+                return ;
+            }
+        }document.write('Là số NT')
+    }check()
+</script>
+</body>
+</html>
