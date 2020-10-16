@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="sao1()">Click me</button>
+<script>
+    function sao1()
+    {
+        n=eval(prompt("So hang= "));
+        for(i=0;i<n-1;i++)
+        {
+            for(j=0;j<n*2-1;j++)
+                if((j>=n-1-i)&&(j<n-1+i))
+                    document.write("*");
+                else
+                    document.write("&nbsp;&nbsp;");
+            document.write("<br>");
+        }
+        for(j=0;j<2*n-1;j++)
+            document.write("*");
+    }
+</script>
+</body>
+</html>
