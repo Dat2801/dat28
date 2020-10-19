@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="key" type="text" placeholder="Nhập từ cần tìm kiếm"
+/>
+<button onclick="search()">Search</button>
+<script>
+    let Vietnamese = [
+        'tên',
+        'màu xanh',
+        'trường học',
+        'tìm kiếm'
+    ];
+    let English = [
+        'name',
+        'green',
+        'school',
+        'search'
+    ];
+    function search() {
+        let key = document.getElementById('key').value;
+        let result = English.indexOf(key.toLowerCase().trim());
+        if (result !== -1) {
+            alert(Vietnamese[result]);
+        }else {
+            alert('Word not found');
+        }
+    }
+</script>
+</body>
+</html>
