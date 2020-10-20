@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 2, 44, 12, 38, 24, 56, 83];
+    let number = +prompt("Nhập số nguyên v");
+    let result = arr.indexOf(number) !== -1;
+    if (result) {
+        alert("Tồn tại " + number + " trong mảng");
+    }
+    arr = arr.filter(function(e) {
+        return e !== number;
+    });
+    document.write("Mảng sau khi xóa " + number + " là " + arr);
+</script>
+</body>
+</html>
