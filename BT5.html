@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str =
+        "-98 -21 12 -44 11 ";
+    let result = str.split(" ").reduce(function(total, e) {
+        return total + (parseInt(e) < 0);
+    }, 0);
+    document.write(result);
+</script>
+</body>
+</html>
