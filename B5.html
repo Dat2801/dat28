@@ -6,12 +6,32 @@
 </head>
 <body>
 <script>
-    let str =
-        "-98 -21 12 -44 11 ";
-    let result = str.split(" ").reduce(function(total, e) {
-        return total + (parseInt(e) < 0);
-    }, 0);
-    document.write(result);
+    let nameString = [
+        "Polaris",
+        "Aldebaran",
+        "Deneb",
+        "Vega",
+        "Altair",
+        "Dubhe",
+        "Regulus"
+    ];
+    let constellationString = [
+        "Ursa Minor",
+        "Tarurus",
+        "Cygnus",
+        "Lyra",
+        "Aquila",
+        "Ursa Major",
+        "Leo"
+    ];
+
+    let input = prompt("Nhập tên sao : ");
+    let result = nameString.indexOf(input.trim());
+    if(result !== -1) {
+        document.write(constellationString[result]);
+    } else {
+        document.write('Not found');
+    }
 </script>
 </body>
 </html>
